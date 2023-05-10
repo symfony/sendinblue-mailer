@@ -17,6 +17,8 @@ use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
 
 /**
  * @author Yann LUCAS
+ *
+ * @deprecated since Symfony 6.3, use BrevoApiTransport instead
  */
 final class SendinblueSmtpTransport extends EsmtpTransport
 {
