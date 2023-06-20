@@ -88,8 +88,10 @@ final class SendinblueApiTransport extends AbstractApiTransport
         $payload = [
             'sender' => $this->stringifyAddress($envelope->getSender()),
             'to' => $this->stringifyAddresses($this->getRecipients($email, $envelope)),
-            'subject' => $email->getSubject(),
         ];
+        if ($subject = $email->getSubject() && !empty($subject)) {
+            $payload['subject'] = $subject;
+        }
         if ($attachements = $this->prepareAttachments($email)) {
             $payload['attachment'] = $attachements;
         }
