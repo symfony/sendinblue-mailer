@@ -44,7 +44,7 @@ This example allow you to set :
     * sender.ip
     * X-Mailin-Custom
 
-For more informations, you can refer to [Sendinblue API documentation](https://developers.sendinblue.com/reference#sendtransacemail).
+For more informations, you can refer to [Sendinblue API documentation](https://developers.brevo.com/reference#sendtransacemail).
 
 Resources
 ---------
