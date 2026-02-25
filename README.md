@@ -1,6 +1,10 @@
 Sendinblue Bridge
 =================
 
+# Deprecation Notice
+
+This package has been deprecated in favor of the symfony/brevo-mailer, since SendInBlue has re-branded as Brevo.
+
 Provides Sendinblue integration for Symfony Mailer.
 
 Configuration example:
